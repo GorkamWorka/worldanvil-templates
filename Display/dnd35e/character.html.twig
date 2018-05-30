@@ -137,7 +137,7 @@
                 <div class="attr-mod">{{ macros.attrModifier( variables.charisma ) }}</div>
             </div>
         </div>
-        <div class="mvt-info-table">
+        <div class="char-data-table">
             <div class="table-row">
               <div class="sub-table-title">Movement Speed : </div>
             </div>
@@ -175,7 +175,65 @@
                     <div class="input-value">{{ variables.sped_forced_march }}</div>
                 </div>
             </div>
+             <div class="table-row">
+              <div class="sub-table-title">Armor Class : </div>
+            </div>
+            <div class="table-row">
+                <div class="quarter-row-cell">
+                    <div class="input-label">Total : </div>
+                    <div class="input-value">{{ variables.ac_total }}</div>
+                </div>
+                <div class="quarter-row-cell">
+                    <div class="input-label">Flat-footed : </div>
+                    <div class="input-value">{{ variables.ac_flat_footed }}</div>
+                </div>
+                <div class="quarter-row-cell">
+                    <div class="input-label">Contact : </div>
+                    <div class="input-value">{{ variables.ac_contact }}</div>
+                </div>
+                 <div class="quarter-row-cell">
+                    <div class="input-label">Arcane spell fail: </div>
+                    <div class="input-value">{{ variables.ac_arcane_fail }}</div>
+                </div>
+            </div>
+            <div class="table-row">
+              <div class="sub-table-title">Attack Bonus: </div>
+            </div>
+            <div class="table-row">
+                <div class="third-row-cell">
+                    <div class="input-label">Base : </div>
+                    <div class="input-value">{{ variables.attack_base_bonus }}</div>
+                </div>
+                <div class="third-row-cell">
+                    <div class="input-label">CC : </div>
+                    <div class="input-value">{{ variables.attack_base_cc }}</div>
+                </div>
+                <div class="third-row-cell">
+                    <div class="input-label">Ranged : </div>
+                    <div class="input-value">{{ variables.attack_base_ranged }}</div>
+                </div>
+            </div>
+              <div class="table-row">
+              <div class="sub-table-title">Saving Throws: </div>
+            </div>
+            <div class="table-row">
+                <div class="third-row-cell">
+                    <div class="input-label">Fortitude : </div>
+                    <div class="input-value">{{ variables.save_fortitude }}</div>
+                </div>
+                <div class="third-row-cell">
+                    <div class="input-label">Reflex : </div>
+                    <div class="input-value">{{ variables.save_reflex }}</div>
+                </div>
+                <div class="third-row-cell">
+                    <div class="input-label">Willpower : </div>
+                    <div class="input-value">{{ variables.save_willpower }}</div>
+                </div>
+            </div>
         </div>
+    </div>
+    <div class="char-features">
+    
     </div>
 
 <div class=""></div>
