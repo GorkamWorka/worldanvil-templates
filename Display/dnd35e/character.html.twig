@@ -572,44 +572,7 @@
             </div>            
         </div>
     </div>
-    <div class="row">
-        <div class="col-md-12"><h4>Proficiences and Languages</h4>  </div>
-        <div class="col-md-12 skill-subtable"><p>{{ variables.proficiences|nl2br }}</p></div>
-        <div class="col-md-12 sub-table-title"><h4>Features &amp; Traits </h4> </div>
-        <div class="col-md-12"><p>{{ variables.features|nl2br }}</p></div>
-    </div>
-    
-    {% if variables.attackstable|length > 0 %}
-        <div class="row">
-            <div class="col-md-12"><h4>Combat</h4>  </div>
-            <div class="col-md-12 sub-table-title"><h4>Attacks </h4> </div>
-            <div class="col-md-12"><p>{{ variables.attackstable|ParseTable|nl2br }}</p></div>
-            {% if variables.attacks|length > 0 %}
-                <div class="col-md-12"><p>{{ variables.attacks|nl2br }}</p></div>
-            {% endif %}
-        </div> 
-    {% elseif variables.attacks|length > 0 %}
-        <div class="row">
-            <div class="col-md-12"><h4>Combat</h4>  </div>
-            <div class="col-md-12"><p>{{ variables.attacks|nl2br }}</p></div>
-        </div>   
-    {% endif %}
-    {% if 
-        variables.spellbook_0|length > 0 or 
-        variables.spellbook_1|length > 0 or 
-        variables.spellbook_2|length > 0 or 
-        variables.spellbook_3|length > 0 or 
-        variables.spellbook_4|length > 0 or 
-        variables.spellbook_5|length > 0 or 
-        variables.spellbook_6|length > 0 or 
-        variables.spellbook_7|length > 0 or 
-        variables.spellbook_8|length > 0 or 
-        variables.spellbook_9|length > 0 
-    %}
-        <div class="char-spellbook">
-            <h2>Spellbook </h2>
-            <div class="char-perso-table">
-                <div class="row">
+    <div class=
                     <div class="col sub-table-title">Level 0 Spells  </div>
                 </div>
                 <div class="row">
